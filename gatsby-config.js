@@ -101,14 +101,7 @@ module.exports = {
                 const url = site.siteMetadata.siteUrl + post.slug
                 const content = `<p>${post.excerpt}</p><div style="margin-top: 50px; font-style: italic;"><strong><a href="${url}">Keep reading</a>.</strong></div><br /> <br />`
 
-                return {
-                  title: post.title,
-                  date: post.date,
-                  excerpt: post.excerpt,
-                  url,
-                  guid: url,
-                  custom_elements: [{ "content:encoded": content }],
-                }
+  
               }),
             query: `
               {

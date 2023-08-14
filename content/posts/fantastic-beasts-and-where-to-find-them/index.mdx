@@ -186,27 +186,5 @@ Code block without line numbers but with highlighting, language, and title:
 ```tsx:title=src/components/blog.tsx {7-9,16} noLineNumbers
 import * as React from "react";
 
-const Blog = ({ posts }: PostsProps) => {
-  const { tagsPath, basePath } = useSiteMetadata();
-
-  return (
-    <Layout>
-      <Flex sx={{ alignItems: `center`, justifyContent: `space-between` }}>
-        <Heading variant="h2" as="h2">
-          Blog
-        </Heading>
-        <Styled.a
-          as={Link}
-          sx={{ variant: `links.secondary` }}
-          to={`/${basePath}/${tagsPath}`.replace(/\/\/+/g, `/`)}
-        >
-          View all tags
-        </Styled.a>
-      </Flex>
-      <Listing posts={posts} sx={{ mt: [4, 5] }} />
-    </Layout>
-  );
-};
-
 export default Blog;
 ```

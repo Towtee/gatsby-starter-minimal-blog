@@ -94,13 +94,6 @@ module.exports = {
             }
           }
         `,
-        feeds: [
-          {
-            serialize: '',
-            output: ``,
-            title: ``,
-          },
-        ],
       },
     },
     `gatsby-plugin-gatsby-cloud`,
